@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodiversity in National Parks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="visualizations.html">Visualizations</a></li>
+            <li><a href="conclusions.html">Conclusions</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="introduction">
+            <h1>Biodiversity in National Parks</h1>
+            <h2>Project Overview</h2>
+            <p>
+                Studying biodiversity offers valuable insights into many areas of ecology, conservation, and environmental science, such as the distribution of species, ecosystem health, and climate change. Through this project, we aim to explore biodiversity in our national parks and uncover patterns related to the prevalence of species, the richness of biodiversity by area, and the distribution of endangered or non-native species by location. By leveraging effective visualizations, we may be able to identify which national parks support the highest biodiversity, highlight regional trends in species at risk, and analyze disparities in ecological diversity. Through thoughtful design and data-driven storytelling, our project will aim to enhance our understanding of biodiversity trends and possibly help inform everything from conservation strategies to the ideal mammal-watching road trip.
+            </p>
+
+            <h2>Project Tasks</h2>
+            <ul>
+                <li>Analyze species richness and density across parks</li>
+                <li>Explore presence of endangered and non-native mammals</li>
+                <li>Investigate how park size, location, and region relate to biodiversity</li>
+            </ul>
+
+            <h2>Data Description</h2>
+            <p><strong>Dataset Statistics:</strong><br>
+                3,867 rows representing mammals across 56 different national parks in the United States
+            </p>
+            <p><strong>Number of Observations:</strong> TBD<br>
+               <strong>Number of Attributes:</strong> TBD</p>
+            <p><strong>Time Period:</strong> 2003–2022 </p>
+            <p><strong>Data Source:</strong> <a href="https://irma.nps.gov/NPSpecies/" target="_blank">National Park Service IRMA Portal</a></p>
+
+            <h3>Key Attributes</h3>
+            <ul>
+                <li>Park Name</li>
+                <li>Common Name, Scientific Name</li>
+                <li>Conservation Status</li>
+                <li>Occurrence and Seasonality</li>
+            </ul>
+
+            <h3>Data Processing</h3>
+            <p>
+                Before getting into analysis, we have to clean and merge our datasets to make sure they are ready for visualization. Our first step will be filtering the species data to focus mainly on mammals using <code>species_mammals.csv</code>. This makes sure that there is consistency in analysis and reduces irrelevant data. Then we will merge <code>parks.csv</code> using the Park Name column to associate mammal species data with park locations and sizes. Missing values will be addressed, especially in columns like occurrence, and seasonality to avoid issues during analysis. Many species also have slightly different common or scientific names, so some rows will have to be consolidated. We also will compute new metrics like mammal species density and endangered mammal counts per park.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Biodiversity in National Parks Project | DS4200 Group 30</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
