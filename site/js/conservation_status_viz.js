@@ -1,4 +1,4 @@
-console.log("✅ Script is working!");
+console.log("test works");
 
 const width = 800;
 const height = 600;
