@@ -23,11 +23,25 @@
         <section id="visualizations">
             <h1>Analysis of Park Biodiversity</h1>
             <!-- Placeholder for visualizations -->
-            <div id="viz1" class="viz-block"></div>
-            <div id="viz2" class="viz-block"></div>
-            <div id="viz3" class="viz-block"></div>
-            <div id="viz4" class="viz-block"></div>
-            <div id="viz5" class="viz-block"></div>
+            
+            <h2>Number of Parks by State</h2>
+            <img src="parks_per_state.png" class="viz-block" alt="Number of Parks in Each State">
+
+            <h2>Number of Species in Each Park by Category</h2>
+            <img src="species_by_park.png" class="viz-block" alt="Number of Species in Each Park by Category">
+
+            <h2>National Parks by Size and Biodiversity</h2>
+            <img src="parks_biodiversity_map.png" class="viz-block" alt="Map of National Parks by Biodiversity">
+
+            <h2>Species by Category, Order, Family, and Name</h2>
+            <iframe src="species_treemap.html" class="viz-block" width="100%" height="600"></iframe>
+
+            <h2>Interactive Dashboard: Parks, Visits, and Species</h2>
+            <iframe src="national_parks_dashboard.html" class="viz-block" width="100%" height="1000"></iframe>
+        
+            <h2>Conservation Status Overview</h2>
+            <div id="viz6" class="viz-block"></div>
+
         </section>
     </main>
 
@@ -36,6 +50,6 @@
     </footer>
 
     <script src="scripts.js"></script>
-    <script src="js/conservation_status_viz.js"></script>
+    <script src="conservation_status_viz.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@ const svg = d3.select("#viz6")
   .attr("height", height);
 
 
-d3.csv("species.csv").then(data => {
+d3.csv("../species.csv").then(data => {
   
   const endangered = data.filter(d => d["Conservation Status"] === "Endangered");
 
