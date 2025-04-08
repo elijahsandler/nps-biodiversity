@@ -18,28 +18,55 @@
     <main>
         <section id="conclusions">
             <h1>Summary and Conclusions</h1>
-
+    
             <h2>Technical Implementation</h2>
             <p>
-                Our project combines Altair and D3.js to produce visualz. . .
+                Our project combined Python-based data processing with Vega-Lite, Altair, and D3.js to generate interactive and static visualizations. We embedded dynamic dashboards into our HTML framework using iframe and script-based integrations. These interactive elements enabled users to filter, hover, and explore key park-level metrics directly within the browser which allowed for a more hands on, intuitive understanding of the dataset than static graphs alone could provide.
             </p>
-
-            <h2>Future Directions</h2>
+    
+            <h2>Key Findings</h2>
+            <ul>
+                <li>
+                    <strong>Species Richness:</strong> Yellowstone National Park had the highest overall species count (3,966 species), while other large parks like Grand Canyon and Great Smoky Mountains also showed elevated diversity.
+                </li>
+                <li>
+                    <strong>Mammal Density:</strong> Some mid-sized parks supported disproportionately high mammal richness relative to their size, demonstrating that acreage does not directly predict species count.
+                </li>
+                <li>
+                    <strong>Visitation Trends:</strong> The Great Smoky Mountains National Park had the highest recorded visitation in 2022, with over <strong>12.9 million visits</strong>. Zion National Park followed closely with nearly <strong>4.7 million</strong>.
+                </li>
+                <li>
+                    <strong>Regional Patterns:</strong> Parks in the Intermountain and Pacific West regions showed strong biodiversity alongside high visitor engagement. These parks may require enhanced conservation oversight due to increased human activity.
+                </li>
+                <li>
+                    <strong>Conservation Risks:</strong> Death Valley National Park topped the list with over <strong>177 species of concern</strong>, including more than 20 classified as threatened or endangered.
+                </li>
+            </ul>
+    
+            <h2>Interactivity and Presentation Value</h2>
             <p>
-                Future work could expand to include other taxa like birds, reptiles, or plants, explore seasonal biodiversity changes, or integrate geographic mapping for spatial storytelling.
+                Interactivity played a key role in enhancing our visual storytelling. Hover-based tooltips in maps and dashboards allow viewers to engage directly with data values, such as exact visitation counts, park acreage, and species totals. The treemap layout allowed users to visually compare park sizes and groupings by state and region, while the time-series line chart offered insight into how visit trends evolved across two decades. This combination of interactivity and design clarity helps highlight outliers, clusters, and patterns more effectively than static charts.
             </p>
-
+    
             <h2>Limitations</h2>
             <p>
-                We are currently limited to mammal data. Some parks have fewer data entries which may affect analysis, and our visualizations are dependent on preprocessing consistency and dataset completeness.
+                Our analysis is focused exclusively on mammal data and may not reflect full park biodiversity. Some parks had fewer or outdated species records, limiting their comparability. Additionally, the conservation status field was sparsely populated, having only 680 of 3,867 mammal rows included a conservation designation, which may lead to underreporting of species at risk.
             </p>
-
+    
+            <h2>Future Directions</h2>
+            <p>
+                Expanding the project to include birds, reptiles, or plant species would provide a more complete picture of biodiversity. Incorporating real-time data from the National Park Service or environmental APIs could allow for ongoing updates to visitation or species status. We also hope to integrate GIS-based map layers to offer deeper spatial analysis, such as identifying biodiversity hotspots or human impact zones across ecosystems.
+            </p>
+    
             <h2>References</h2>
             <ul>
                 <li><a href="https://earth.org/effects-of-biodiversity-loss/" target="_blank">5 Concerning Effects of Biodiversity Loss</a></li>
-                <li><a href="https://www.un.org/en/climatechange/science/climate-issues/biodiversity" target="_blank">Biodiversity - our strongest natural defense against climate change</a></li>
+                <li><a href="https://www.un.org/en/climatechange/science/climate-issues/biodiversity" target="_blank">Biodiversity – Our Strongest Natural Defense Against Climate Change</a></li>
+                <li><a href="https://irma.nps.gov/NPSpecies/" target="_blank">NPS IRMA Portal</a></li>
             </ul>
         </section>
+    </main>
+    
     </main>
 
     <footer>

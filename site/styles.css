@@ -82,3 +82,40 @@ footer {
     font-size: 0.9em;
     color: #777;
 }
+
+.hero {
+    background-image: url('https://assets.vogue.com/photos/66635a4dfd7e8e20e523ec29/master/w_2560%2Cc_limit/1162854296');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(133, 146, 149, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: white;
+}
+
+.viz-section {
+    margin-bottom: 60px;
+    padding: 30px 20px;
+    background-color: #8b8b8b33;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(245, 245, 245, 0.752);
+}
+

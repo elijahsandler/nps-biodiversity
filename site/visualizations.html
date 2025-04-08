@@ -22,32 +22,30 @@
     <main>
         <section id="visualizations">
             <h1>Analysis of Park Biodiversity</h1>
-            <!-- Placeholder for visualizations -->
-            
-            <!-- <h2>Number of Parks by State</h2>
-            <img src="parks_per_state.png" class="viz-block" alt="Number of Parks in Each State">
 
-            <h2>Number of Species in Each Park by Category</h2>
-            <img src="species_by_park.png" class="viz-block" alt="Number of Species in Each Park by Category"> -->
+            <div class="viz-section">
+                <h2>Park Visitation by Region</h2>
+                <iframe src="visit_treemap.html" class="viz-block" width="100%" height="600"></iframe>
+                <p><strong>Figure 1:</strong> National park visitation treemap by region, state, and park for 2022. Great Smoky Mountains National Park had the highest visitation (nearly 13 million), while Zion National Park led in Utah with 4.7 million. Hover interactions reveal detailed visit counts and hierarchy structure.</p>
+            </div>
 
-            <!-- <h2>National Parks by Size and Biodiversity</h2>
-            <img src="parks_biodiversity_map.png" class="viz-block" alt="Map of National Parks by Biodiversity"> -->
+            <div class="viz-section">
+                <h2>Interactive Dashboard: Parks, Visits, and Species</h2>
+                <iframe src="national_parks_dashboard.html" class="viz-block" width="100%" height="1000"></iframe>
+                <p><strong>Figure 2:</strong> Interactive dashboard combining species count, park size, and visitation data. Larger, darker circles indicate higher mammal diversity. Yellowstone leads with over 3,900 species and 2.2 million acres. This dashboard includes visualizations for overall species distribution, park visitation over time, and species count by biological category. Users can explore trends by hovering and interacting with individual park data points.</p>
+            </div>
 
-            <!-- <h2>Species by Category, Order, Family, and Name</h2>
-            <iframe src="species_treemap.html" class="viz-block" width="100%" height="600"></iframe> -->
+            <div class="viz-section">
+                <h2>Conservation Status Overview</h2>
+                <div id="viz6" class="viz-block"></div>
+                <p><strong>Figure 3:</strong> This placeholder visualization represents an overview of mammal conservation statuses across parks, rendered using D3.js. It allows interactive exploration of endangered, threatened, and species of concern populations by park through hover-based details.</p>
+            </div>
 
-            <h2>Park Visitation by Region</h2>
-            <iframe src="visit_treemap.html" class="viz-block" width="100%" height="600"></iframe>
-
-
-            <h2>Interactive Dashboard: Parks, Visits, and Species</h2>
-            <iframe src="national_parks_dashboard.html" class="viz-block" width="100%" height="1000"></iframe>
-        
-            <h2>Conservation Status Overview</h2>
-            <div id="viz6" class="viz-block"></div>
-
-            <h2>Conservation Status Details</h2>
-            <iframe src="conservation_status.html" class="viz-block" width="100%" height="600"></iframe>
+            <div class="viz-section">
+                <h2>Conservation Status Counts by National Park</h2>
+                <iframe src="conservation_status.html" class="viz-block" width="100%" height="600"></iframe>
+                <p><strong>Figure 4:</strong> Stacked bar chart of conservation status counts across parks. Categories include “In Recovery,” “Species of Concern,” “Threatened,” and “Endangered.” Death Valley National Park leads in species of concern (177), and Hawaii Volcanoes has the most endangered mammals. This view highlights the distribution of conservation pressure by location.</p>
+            </div>
 
         </section>
     </main>
