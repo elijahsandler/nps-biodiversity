@@ -21,41 +21,39 @@
     
             <h2>Technical Implementation</h2>
             <p>
-                Our project combined Python-based data processing with Vega-Lite, Altair, and D3.js to generate interactive and static visualizations. We embedded dynamic dashboards into our HTML framework using iframe and script-based integrations. These interactive elements enabled users to filter, hover, and explore key park-level metrics directly within the browser which allowed for a more hands on, intuitive understanding of the dataset than static graphs alone could provide.
+                Our project combined Python-based data processing with Plotly, Altair, and D3.js to generate interactive and static visualizations. We embedded dynamic dashboards into our HTML framework using iframe and script-based integrations. These interactive elements enabled users to filter, hover, and explore key park-level metrics directly within the browser which allowed for a more hands on, intuitive understanding of the dataset than static graphs alone could provide.
             </p>
     
             <h2>Key Findings</h2>
             <ul>
                 <li>
-                    <strong>Species Richness:</strong> Yellowstone National Park had the highest overall species count (3,966 species), while other large parks like Grand Canyon and Great Smoky Mountains also showed elevated diversity.
+                    <strong>Species Richness:</strong> The Great Smokey Mountains, powered by their 2000+ species of insects, have the most unique species of any National Park. Close behind is California's Redwood National Park, which is the ony other park to have over 6000 unique catalogued species.
                 </li>
                 <li>
-                    <strong>Mammal Density:</strong> Some mid-sized parks supported disproportionately high mammal richness relative to their size, demonstrating that acreage does not directly predict species count.
+                    <strong>Visitation Trends:</strong> The Great Smoky Mountains National Park had the highest recorded visitation in 2022, with over <strong>12.9 million visits</strong>. Zion National Park and the Grand Canyon lagged far behind with just under <strong>4.7 million</strong>.
                 </li>
                 <li>
-                    <strong>Visitation Trends:</strong> The Great Smoky Mountains National Park had the highest recorded visitation in 2022, with over <strong>12.9 million visits</strong>. Zion National Park followed closely with nearly <strong>4.7 million</strong>.
+                    <strong>Regional Patterns:</strong> Parks in the Intermountain and Pacific West regions showed strong biodiversity alongside high visitor engagement. These parks may require enhanced conservation oversight due to increased human activity. Parks in Alaska have show lower biodiversity and visitation, but fewer issues with species conservation.
                 </li>
                 <li>
-                    <strong>Regional Patterns:</strong> Parks in the Intermountain and Pacific West regions showed strong biodiversity alongside high visitor engagement. These parks may require enhanced conservation oversight due to increased human activity.
-                </li>
-                <li>
-                    <strong>Conservation Risks:</strong> Death Valley National Park topped the list with over <strong>177 species of concern</strong>, including more than 20 classified as threatened or endangered.
+                    <strong>Conservation Risks:</strong> Death Valley National Park topped the list with over <strong>200 species of note</strong>, including 40 classified as threatened or endangered. Parks in Hawaii showed the highest rates of endangered species. 
                 </li>
             </ul>
     
             <h2>Interactivity and Presentation Value</h2>
             <p>
-                Interactivity played a key role in enhancing our visual storytelling. Hover-based tooltips in maps and dashboards allow viewers to engage directly with data values, such as exact visitation counts, park acreage, and species totals. The treemap layout allowed users to visually compare park sizes and groupings by state and region, while the time-series line chart offered insight into how visit trends evolved across two decades. This combination of interactivity and design clarity helps highlight outliers, clusters, and patterns more effectively than static charts.
+                Interactivity played a key role in enhancing our visual storytelling. Hover-based tooltips in maps and dashboards allow viewers to engage directly with data values, such as exact visitation counts, park acreage, and species totals. The treemap layout allowed users to visually compare park importance and groupings by state and region, while the time-series line chart offered insight into how visit trends evolved across two decades. This combination of interactivity and design clarity helps highlight outliers, clusters, and patterns more effectively than static charts. We were also able to leverage Plotly's built in interactivity to allow users to filter by region and conservation status, as well as zoom in on parts of the chart.
             </p>
     
             <h2>Limitations</h2>
             <p>
-                Our analysis is focused exclusively on mammal data and may not reflect full park biodiversity. Some parks had fewer or outdated species records, limiting their comparability. Additionally, the conservation status field was sparsely populated, having only 680 of 3,867 mammal rows included a conservation designation, which may lead to underreporting of species at risk.
+                Our analysis is based on relatively granular data. We know of the existence of species in the parks, but not their locations or counts. This means that we cannot make any conclusions about the health of the species or their populations beyond their official conservation status. Our visitation data is also limited to what is described as "recreational visits," which does not include other types of park engagement such as education or research. <br><br>Some datasets were also missing parks: Indiana Dunes, Virgin Islands, and American Samoa were not included, among others, and Sequoia and Kings Canyon were combined into a single observation, which means we lost even more granularity. 
+
             </p>
     
             <h2>Future Directions</h2>
             <p>
-                Expanding the project to include birds, reptiles, or plant species would provide a more complete picture of biodiversity. Incorporating real-time data from the National Park Service or environmental APIs could allow for ongoing updates to visitation or species status. We also hope to integrate GIS-based map layers to offer deeper spatial analysis, such as identifying biodiversity hotspots or human impact zones across ecosystems.
+                Incorporating additional data such as more fine grained species counts, park land use, and in-depth visitation data would allow us to make more robust conclusions about the health of the parks and their species, and some of the connections between these variables. Land use and visitation are controlable and predictable, so understanding the impact of these variables on species health could be very useful as we fight for species conservation.  
             </p>
     
             <h2>References</h2>
