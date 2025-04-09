@@ -56,7 +56,13 @@
 
             <h3>Data Processing</h3>
             <p>
-                We began by filtering the full species dataset to focus on mammals, reducing the dataset from over 119,000 records to 3,867. We merged this with park-level visitation data and cleaned missing or inconsistent values across fields like occurrence, seasonality, and conservation status. We also computed new fields, including mammal species density (species per square km) and endangered species counts per park to support richer visual exploration.
+                We began by working with the full NPS species dataset, which includes over 119,000 entries across various taxonomic categories such as mammals, birds, plants, reptiles, and more. We cleaned and filtered the data to focus on species with valid and relevant conservation or occurrence information, using 119,248 records across 56 national parks.
+            </p>
+            <p>
+                For analysis, we joined this species dataset with visitation data using park names as keys. This required reconciling naming inconsistencies across sources. For example, Sequoia National Park and Kings Canyon National Park often report data together, so we combined their entries into a single park unit for consistency throughout the analysis.
+            </p>
+            <p>
+                We engineered several new fields to support visual analysis, including species richness (total species count per park), species density (normalized by park area), and endangered species totals. We also addressed missing or inconsistent values across key fields like occurrence, seasonality, and conservation status to ensure reliability in our visualizations.
             </p>
         </section>
     </main>
