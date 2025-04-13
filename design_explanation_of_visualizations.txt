@@ -1,0 +1,42 @@
+Design Explanation of Visualizations – DS4200 Final Project Group 30
+
+Link to Website: https://elijahsandler.github.io/nps-biodiversity/visualizations.html
+
+Figure 1: National Park Visitation Treemap
+--------------------------------------------------------
+This treemap shows the number of recreational visits to national parks in 2022, hierarchically grouped by region, then state, and then individual park. A treemap was chosen for its ability to encode quantitative values using areal which a visual channel that allows rapid comparisons at multiple levels. This aligns with the principle “eyes beat memory,” from class since viewers can directly compare park sizes without remembering values.
+
+The layout supports task abstraction by enabling users to compare high-level regional trends as well as individual parks. This treemap has interactivemhover-based tooltips showing precise visit counts which helps with clarity and enables querying tasks. The absence of etxra 3D or effects supports graphical integrity, and text labels are layered clearly.
+
+Figure 2: Interactive Dashboard – Parks, Visits, and Species
+--------------------------------------------------------
+This dashboard combines multiple Altair and Plotly charts into one interactive view: a species-richness map, a time-series visitation trend chart, and a species count by category bar chart.
+
+- The U.S. map uses point marks and spatial position to encode park location. Circle size represents total species count, and color saturation shows species density. Hovering allows the user to query park name, area, and number of species.
+- The time-series line chart shows recreational visits over time for each park. Using position and line marks captures continuous field data well. A notable finding here is the drop in 2020 during the COVID-19 pandemic, with Great Smoky Mountains being an exception.
+- The species count bar chart uses one key (category) with a quantitative value (count), visualized using bar length. This is important for comparing biological group representation and helps answer lookup and comparison tasks.
+
+This multi-view design supports exploratory and explanatory tasks. It emphasizes the importance of interactivity in reducing cognitive load, letting users discover relationships between size, biodiversity, and human activity at their own pace.
+
+Figure 3: Endangered Species Bubble Plot
+--------------------------------------------------------
+This D3 bubble plot visualizes the number of endangered species per park. Size encodes count, and color represents risk severity. The plot leverages circular marks for aesthetic consistency and visual separation. Larger and darker bubbles stand out and brings attention to higher risk parks like Hawai‘i Volcanoes.
+
+The chart supports high-level overview and low-level query tasks through hover-based interaction. It also aligns with the graphical integrity principle by maintaining proportional representation between species count and bubble area.
+
+Figure 4: Conservation Status by Park (Stacked Bar Chart)
+--------------------------------------------------------
+This visualization displays conservation status breakdowns across parks using stacked bars. Categories include “In Recovery,” “Species of Concern,” “Threatened,” and “Endangered.” Marks are bars, and channels include position (height), color (status), and order. For comparative filtering, you are able to toggle statuses on/off which also helps with exploratory analysis.
+
+
+This encoding supports comparisons across parks and lets users visually compare the distribution of at risk species. For example, Death Valley has the most species of concern, while Hawai‘i Volcanoes leads in endangered species. Interactivity allows for precise value retrieval and color coded grouping by status improves accessibility.
+
+Figure 5: Species of Concern vs. Total Species (Scatterplot)
+--------------------------------------------------------
+This scatterplot maps each park by total species count (x-axis) and species of concern (y-axis), with point color denoting region. Scatterplots are ideal for showing correlation, and this figure supports high-level pattern detection(clusters, outliers) and low-level query tasks via hover.
+
+Toggling regions on/off in the legend again helps with comparative filtering and boosts exploratory analysis. Points like Yellowstone (high total species) and Death Valley (high concern species) help users locate key ecological hotspots. The encoding follows data dimensionality—2D spatial layout for two quantitative variables.
+
+Overall Design Strategy
+--------------------------------------------------------
+All charts avoid unjustified 3D, rely on justified 2D layout, and emphasize direct labeling where appropriate. Interactivity is consistently used to enhance exploration, aligning with the visual encoding idiom of separating, ordering, and aligning to support task abstraction. Our choices in marks (points, bars, lines, circles) and channels (position, color, size) reflect clarity, accessibility, and user-centered thinking.
